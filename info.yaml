@@ -18,9 +18,11 @@ project:
 
   # FIXED: Listed all your structural design building blocks so the cloud reads them in order
   source_files:
-    - "project.v"
-    - "valu.sv"
-    - "vrf.sv"
+    - "project.v"         # Your tt_um_example master dashboard bridge
+    - "zaxe32_eu.sv"      # Your core hardware execution unit wrapper
+    - "zaxe32_vu.sv"      # Your vector compute unit / core cluster
+    - "valu.sv"           # Your parallel ALU lane math engines
+    - "vrf.sv"            # Your multi-port synchronous vector register matrix
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
